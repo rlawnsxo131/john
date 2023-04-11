@@ -2,6 +2,12 @@ import { useEffect, useState } from 'react';
 
 type NotNullishValue = {};
 
+/**
+ *
+ * @param value
+ * @param areValuesEqual
+ * @returns
+ */
 export function usePreservedReference<T extends NotNullishValue>(
   value: T,
   areValuesEqual: (a: T, b: T) => boolean = areDeeplyEqual,

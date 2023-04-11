@@ -1,7 +1,7 @@
 import type { DependencyList } from 'react';
 import { useCallback, useRef } from 'react';
 
-import { usePreservedCallback } from './usePreservedCallback.js';
+import { usePreservedCallback } from './usePreservedCallback';
 
 type EffectRef<E extends HTMLElement = HTMLElement> = (
   element: E | null,
