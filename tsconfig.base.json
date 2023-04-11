@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "useDefineForClassFields": true,
+    "allowJs": true,
+    "skipLibCheck": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "module": "es6",
+    "isolatedModules": true,
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true
+  },
+  // 아래 옵션을 켠 파일의 tsconfig 에는 composit: true 가 필요하다.
+  "references": [
+    {
+      "path": "./packages/react"
+    }
+  ]
+}
