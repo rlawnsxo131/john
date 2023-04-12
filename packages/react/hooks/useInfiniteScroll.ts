@@ -1,6 +1,8 @@
 import type { RefObject } from 'react';
 import { useEffect } from 'react';
 
+import { usePreservedReference } from './usePreservedReference';
+
 /**
  * https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks#advanced-configuration
  * @param ref
@@ -16,6 +18,7 @@ export function useInfiniteScroll<E extends HTMLElement = HTMLElement>(
     threshold: 0,
   },
 ) {
+  const preservedOptions = usePreservedReference(options);
   useEffect(() => {
     if (!ref.current) return;
     const observer = new IntersectionObserver(
@@ -28,13 +31,12 @@ export function useInfiniteScroll<E extends HTMLElement = HTMLElement>(
         });
       },
       {
-        ...options,
+        ...preservedOptions,
       },
     );
     observer.observe(ref.current);
     return () => {
       observer.disconnect();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ref, fetchNext, JSON.stringify(options)]);
+  }, [ref, fetchNext, preservedOptions]);
 }

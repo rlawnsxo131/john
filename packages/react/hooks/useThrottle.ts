@@ -4,6 +4,12 @@ import { useEffect, useMemo } from 'react';
 import { usePreservedCallback } from './usePreservedCallback';
 import { usePreservedReference } from './usePreservedReference';
 
+/**
+ * @param callback
+ * @param wait
+ * @param options
+ * @returns
+ */
 export function useThrottle<Callback extends (...args: any[]) => any>(
   callback: Callback,
   wait: number,
