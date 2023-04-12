@@ -338,6 +338,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@john/common@workspace:packages/common":
+  version: 0.0.0-use.local
+  resolution: "@john/common@workspace:packages/common"
+  languageName: unknown
+  linkType: soft
+
 "@john/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@john/react@workspace:packages/react"

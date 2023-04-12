@@ -16,6 +16,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
+        "name": "@john/common",\
+        "reference": "workspace:packages/common"\
+      },\
+      {\
         "name": "@john/react",\
         "reference": "workspace:packages/react"\
       },\
@@ -27,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@john/common", ["workspace:packages/common"]],\
       ["@john/react", ["workspace:packages/react"]],\
       ["@john/tanstack-query", ["workspace:packages/tanstack-query"]],\
       ["john", ["workspace:."]]\
@@ -466,6 +471,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@humanwhocodes/object-schema", "npm:1.2.1"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@john/common", [\
+        ["workspace:packages/common", {\
+          "packageLocation": "./packages/common/",\
+          "packageDependencies": [\
+            ["@john/common", "workspace:packages/common"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@john/react", [\

@@ -2,6 +2,7 @@
   "name": "john",
   "packageManager": "yarn@3.3.0",
   "workspaces": [
+    "packages/common",
     "packages/react",
     "packages/tanstack-query"
   ],
@@ -9,6 +10,7 @@
     "sdk": "yarn dlx @yarnpkg/sdks vscode",
     "upgrade": "yarn upgrade-interactive",
     "list": "yarn workspaces list",
+    "@john/common": "yarn workspace @john/tanstack-query",
     "@john/react": "yarn workspace @john/react",
     "@john/tanstack-query": "yarn workspace @john/tanstack-query"
   },
