@@ -6,11 +6,9 @@ import { useEffect } from 'react';
  * @param callback
  * @param options
  */
-export function useIntersectionObserver<
-  Callback extends (entry: IntersectionObserverEntry, ...args: any[]) => any,
->(
-  ref: React.RefObject<any>,
-  callback: Callback,
+export function useIntersectionObserver<E extends HTMLElement = HTMLElement>(
+  ref: React.RefObject<E>,
+  callback: (entry: IntersectionObserverEntry, ...args: any[]) => any,
   options: IntersectionObserverInit = {
     root: null,
     rootMargin: '0px',

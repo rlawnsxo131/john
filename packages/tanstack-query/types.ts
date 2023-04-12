@@ -1,6 +1,5 @@
 import type {
-  InfiniteData,
-  QueryOptions,
+  UseInfiniteQueryOptions,
   UseMutationOptions,
   UseQueryOptions,
 } from '@tanstack/react-query';
@@ -14,10 +13,11 @@ export type UseQueryOptionsOf<T extends (...args: any) => any> =
   >;
 
 export type UseInfiniteQueryOptionsOf<T extends (...args: any) => any> =
-  QueryOptions<
+  UseInfiniteQueryOptions<
     Awaited<ReturnType<T>>,
     unknown,
-    InfiniteData<Awaited<ReturnType<T>>>,
+    Awaited<ReturnType<T>>,
+    Awaited<ReturnType<T>>,
     any[]
   >;
 

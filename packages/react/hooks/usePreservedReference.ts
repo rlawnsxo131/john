@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 type NotNullishValue = {};
 
 /**
- *
  * @param value
  * @param areValuesEqual
  * @returns

@@ -12,6 +12,11 @@ type RefCallback<E extends HTMLElement = HTMLElement> = (
   element: E,
 ) => CleanupCallback | void;
 
+/**
+ * @param callback
+ * @param deps
+ * @returns
+ */
 export function useRefEffect<E extends HTMLElement = HTMLElement>(
   callback: RefCallback<E>,
   deps: DependencyList,

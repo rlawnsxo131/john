@@ -1,3 +1,4 @@
+import type { RefObject } from 'react';
 import { useEffect } from 'react';
 
 /**
@@ -6,9 +7,9 @@ import { useEffect } from 'react';
  * @param fetchNext
  * @param options
  */
-export function useInfiniteScroll(
-  ref: React.RefObject<any>,
-  fetchNext: () => void,
+export function useInfiniteScroll<E extends HTMLElement = HTMLElement>(
+  ref: RefObject<E>,
+  fetchNext?: () => void,
   options: IntersectionObserverInit = {
     root: null,
     rootMargin: '0px',
@@ -21,6 +22,7 @@ export function useInfiniteScroll(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            if (!fetchNext) return;
             fetchNext();
           }
         });
