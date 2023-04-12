@@ -18,6 +18,7 @@ export function useIntersectionObserver<E extends HTMLElement = HTMLElement>(
   },
 ) {
   const preservedOptions = usePreservedReference(options);
+
   useEffect(() => {
     if (!ref.current) return;
     const observer = new IntersectionObserver(
