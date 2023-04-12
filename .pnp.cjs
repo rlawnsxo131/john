@@ -474,10 +474,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@john/react", "workspace:packages/react"],\
             ["@types/lodash.debounce", "npm:4.0.7"],\
+            ["@types/lodash.throttle", "npm:4.1.7"],\
             ["@types/react", "npm:18.0.34"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:a8a16e7912b0d219e8ee4c8470e784dd3426d97460d1cd80f8c8cbdbeab59e6ce01c4bb742da49f402835956b6f16e04ce0ce967c7af239f9425fbefab1391d8#npm:3.1.0"],\
             ["lodash.debounce", "npm:4.0.8"],\
+            ["lodash.throttle", "npm:4.1.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:a8a16e7912b0d219e8ee4c8470e784dd3426d97460d1cd80f8c8cbdbeab59e6ce01c4bb742da49f402835956b6f16e04ce0ce967c7af239f9425fbefab1391d8#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
@@ -647,6 +649,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-lodash.debounce-npm-4.0.7-efe92bf273-e873b2d77f.zip/node_modules/@types/lodash.debounce/",\
           "packageDependencies": [\
             ["@types/lodash.debounce", "npm:4.0.7"],\
+            ["@types/lodash", "npm:4.14.192"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/lodash.throttle", [\
+        ["npm:4.1.7", {\
+          "packageLocation": "./.yarn/cache/@types-lodash.throttle-npm-4.1.7-6156818330-6e1b383648.zip/node_modules/@types/lodash.throttle/",\
+          "packageDependencies": [\
+            ["@types/lodash.throttle", "npm:4.1.7"],\
             ["@types/lodash", "npm:4.14.192"]\
           ],\
           "linkType": "HARD"\
@@ -1889,6 +1901,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lodash.merge-npm-4.6.2-77cb4416bf-ad580b4bdb.zip/node_modules/lodash.merge/",\
           "packageDependencies": [\
             ["lodash.merge", "npm:4.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.throttle", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/lodash.throttle-npm-4.1.1-856641af92-129c0a28ce.zip/node_modules/lodash.throttle/",\
+          "packageDependencies": [\
+            ["lodash.throttle", "npm:4.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
