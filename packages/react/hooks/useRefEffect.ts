@@ -3,14 +3,14 @@ import { useCallback, useRef } from 'react';
 
 import { usePreservedCallback } from './usePreservedCallback';
 
-type EffectRef<E extends HTMLElement = HTMLElement> = (
+export type EffectRef<E extends HTMLElement = HTMLElement> = (
   element: E | null,
 ) => void;
 
-type CleanupCallback = () => void;
-type RefCallback<E extends HTMLElement = HTMLElement> = (
+export type EffectRefCleanupCallback = () => void;
+export type EffectRefCallback<E extends HTMLElement = HTMLElement> = (
   element: E,
-) => CleanupCallback | void;
+) => EffectRefCleanupCallback | void;
 
 /**
  * @param callback
@@ -18,11 +18,11 @@ type RefCallback<E extends HTMLElement = HTMLElement> = (
  * @returns
  */
 export function useRefEffect<E extends HTMLElement = HTMLElement>(
-  callback: RefCallback<E>,
+  callback: EffectRefCallback<E>,
   deps: DependencyList,
 ): EffectRef<E> {
   const preservedCallback = usePreservedCallback(callback);
-  const disposeRef = useRef<CleanupCallback>(noop);
+  const disposeRef = useRef<EffectRefCleanupCallback>(noop);
 
   const effect = useCallback(
     (element: E | null) => {
