@@ -11,7 +11,7 @@ import { usePreservedReference } from './usePreservedReference';
  */
 export function useInfiniteScroll<E extends HTMLElement = HTMLElement>(
   ref: RefObject<E>,
-  fetchNext?: () => void,
+  fetchNext: () => void,
   options: IntersectionObserverInit = {
     root: null,
     rootMargin: '0px',
@@ -26,7 +26,6 @@ export function useInfiniteScroll<E extends HTMLElement = HTMLElement>(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            if (!fetchNext) return;
             fetchNext();
           }
         });
