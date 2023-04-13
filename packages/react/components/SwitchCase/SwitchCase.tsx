@@ -4,7 +4,7 @@ type Props<Case extends string> = {
   defaultComponent?: JSX.Element | null;
 };
 
-export default function SwitchCase<Case extends string>({
+export function SwitchCase<Case extends string>({
   value,
   caseBy,
   defaultComponent = null,

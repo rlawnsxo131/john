@@ -11,7 +11,7 @@ import { usePreservedReference } from './usePreservedReference';
  */
 export function useInfiniteScroll<E extends HTMLElement = HTMLElement>(
   ref: RefObject<E>,
-  fetchNext: () => void,
+  fetchNext: () => void | Promise<void>,
   options: IntersectionObserverInit = {
     root: null,
     rootMargin: '0px',
