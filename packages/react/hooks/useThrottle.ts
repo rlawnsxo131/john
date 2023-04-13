@@ -5,10 +5,11 @@ import { usePreservedCallback } from './usePreservedCallback';
 import { usePreservedReference } from './usePreservedReference';
 
 /**
+ * @description lodash throttle 을 조금더 편하게 사용하기 위한 hook 입니다.
  * @param callback
  * @param wait
  * @param options
- * @returns
+ * @returns DebouncedFunc<Callback>
  */
 export function useThrottle<Callback extends (...args: any[]) => any>(
   callback: Callback,

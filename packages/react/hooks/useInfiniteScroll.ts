@@ -5,6 +5,7 @@ import { usePreservedReference } from './usePreservedReference';
 
 /**
  * https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks#advanced-configuration
+ * @description infiniteScroll 을 조금더 편하게 구현하기 위한 hook 입니다.
  * @param ref
  * @param fetchNext
  * @param options

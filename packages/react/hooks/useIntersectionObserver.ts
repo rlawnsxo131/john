@@ -4,6 +4,7 @@ import { usePreservedReference } from './usePreservedReference';
 
 /**
  * https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks#advanced-configuration
+ * @description IntersectionObserver 를 조금더 편하게 사용하기 위한 hook 입니다.
  * @param ref
  * @param callback
  * @param options
