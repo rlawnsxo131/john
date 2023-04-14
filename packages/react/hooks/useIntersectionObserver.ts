@@ -18,7 +18,7 @@ export type UseIntersectionObserverOptions = IntersectionObserverInit & {
  *
  * @param ref observe 할 html element
  * @param callback UseInterSectionObserverCallback
- * @param options intersectionObserver option
+ * @param options UseIntersectionObserverOptions
  */
 export function useIntersectionObserver<E extends HTMLElement = HTMLElement>(
   ref: React.RefObject<E>,
