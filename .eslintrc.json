@@ -38,7 +38,7 @@
     "react-hooks/exhaustive-deps": [
       "warn",
       {
-        "additionalHooks": "(useRefEffect | useInfiniteScroll | useIntersectionObserver)"
+        "additionalHooks": "(useRefEffect)"
       }
     ],
     "@typescript-eslint/consistent-type-imports": [

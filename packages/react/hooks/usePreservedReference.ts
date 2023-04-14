@@ -5,6 +5,7 @@ type NotNullishValue = {};
 /**
  * @description comparator로 비교했을 때 값이 변경되었을 때에만 레퍼런스를 변경하도록 합니다.
  * 기본은 JSON.stringify를 했을 때 동일한 값이면 레퍼런스를 유지합니다.
+ *
  * @param value
  * @param areValuesEqual
  * @returns T
