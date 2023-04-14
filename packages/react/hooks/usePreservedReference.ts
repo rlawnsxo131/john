@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type NotNullishValue = Record<string, unknown>;
+type NotNullishValue = Record<string, any>;
 
 /**
  * @description comparator로 비교했을 때 값이 변경되었을 때에만 레퍼런스를 변경하도록 합니다.
