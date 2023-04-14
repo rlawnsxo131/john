@@ -5,6 +5,7 @@ import { usePreservedReference } from './usePreservedReference';
 
 /**
  * @description infiniteScroll 을 조금더 편하게 구현하기 위한 hook 입니다.
+ * hook 내부에서 따로 fetchNext 에 대한 debounce, throttle 을 구현하지 않습니다.
  *
  * @param ref
  * @param fetchNext
