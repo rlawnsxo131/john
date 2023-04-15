@@ -9,6 +9,8 @@ type NotNullishValue = Record<string, any>;
  * @param value
  * @param areValuesEqual
  * @returns T
+ *
+ * @returns void
  */
 export function usePreservedReference<T extends NotNullishValue>(
   value: T,

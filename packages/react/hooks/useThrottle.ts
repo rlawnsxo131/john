@@ -10,6 +10,7 @@ import { usePreservedReference } from './usePreservedReference';
  * @param callback
  * @param wait
  * @param options
+ *
  * @returns DebouncedFunc<Callback>
  */
 export function useThrottle<Callback extends (...args: any[]) => any>(

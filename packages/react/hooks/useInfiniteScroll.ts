@@ -10,6 +10,8 @@ import { usePreservedReference } from './usePreservedReference';
  * @param ref
  * @param fetchNext
  * @param options
+ *
+ * @returns void
  */
 export function useInfiniteScroll<E extends HTMLElement = HTMLElement>(
   ref: RefObject<E>,
