@@ -1,4 +1,4 @@
-type Props<Case extends string> = {
+export type SwitchCaseProps<Case extends string> = {
   caseBy: Partial<Record<Case, JSX.Element | null>>;
   value?: Case;
   defaultComponent?: JSX.Element | null;
@@ -8,7 +8,7 @@ export function SwitchCase<Case extends string>({
   value,
   caseBy,
   defaultComponent = null,
-}: Props<Case>) {
+}: SwitchCaseProps<Case>) {
   if (!value) {
     return defaultComponent;
   }
