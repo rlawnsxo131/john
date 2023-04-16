@@ -1,6 +1,8 @@
 import type { BaseSyntheticEvent, RefObject } from 'react';
 import { useEffect } from 'react';
 
+import { usePreservedCallback } from './usePreservedCallback';
+
 export type UseOnClickOutsideHandler = (
   e: BaseSyntheticEvent | MouseEvent | TouchEvent,
 ) => void | Promise<void>;
@@ -18,12 +20,14 @@ export function useOnClickOutside<E extends HTMLElement = HTMLElement>(
   ref: RefObject<E>,
   handler: UseOnClickOutsideHandler,
 ) {
+  const preservedHandler = usePreservedCallback(handler);
+
   useEffect(() => {
     const listener: UseOnClickOutsideHandler = (event) => {
       if (!ref.current || ref.current.contains(event.target)) {
         return;
       }
-      handler(event);
+      preservedHandler(event);
     };
 
     document.addEventListener('mousedown', listener);
@@ -33,5 +37,5 @@ export function useOnClickOutside<E extends HTMLElement = HTMLElement>(
       document.removeEventListener('mousedown', listener);
       document.removeEventListener('touchstart', listener);
     };
-  }, [ref, handler]);
+  }, [ref, preservedHandler]);
 }
