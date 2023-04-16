@@ -43,7 +43,9 @@ export function useIntersectionObserver<E extends HTMLElement = HTMLElement>(
       (entries) => {
         entries.forEach((entry, idx, entries) => {
           if (entry.isIntersecting && preservedOptions.freezeOnceVisible) {
-            setFrozen(true);
+            if (!frozen) {
+              setFrozen(true);
+            }
           }
           callback(entry, idx, entries);
         });
