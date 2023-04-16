@@ -1,5 +1,5 @@
 {
-  "name": "john",
+  "name": "@john/monorepo",
   "packageManager": "yarn@3.3.0",
   "workspaces": [
     "example",
