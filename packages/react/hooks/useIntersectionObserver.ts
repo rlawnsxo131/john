@@ -39,14 +39,19 @@ export function useIntersectionObserver<E extends HTMLElement = HTMLElement>(
     if (!ref.current) return;
     if (frozen) return;
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, idx, entries) => {
-        if (entry.isIntersecting && preservedOptions.freezeOnceVisible) {
-          setFrozen(true);
-        }
-        callback(entry, idx, entries);
-      });
-    }, preservedOptions);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, idx, entries) => {
+          if (entry.isIntersecting && preservedOptions.freezeOnceVisible) {
+            setFrozen(true);
+          }
+          callback(entry, idx, entries);
+        });
+      },
+      {
+        ...preservedOptions,
+      },
+    );
 
     observer.observe(ref.current);
 

@@ -27,13 +27,18 @@ export function useInfiniteScroll<E extends HTMLElement = HTMLElement>(
   useEffect(() => {
     if (!ref.current) return;
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          fetchNext();
-        }
-      });
-    }, preservedOptions);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            fetchNext();
+          }
+        });
+      },
+      {
+        ...preservedOptions,
+      },
+    );
 
     observer.observe(ref.current);
 
