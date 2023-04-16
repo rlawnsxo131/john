@@ -11,7 +11,7 @@
     "sdk": "yarn dlx @yarnpkg/sdks vscode",
     "upgrade": "yarn upgrade-interactive",
     "list": "yarn workspaces list",
-    "@john/common": "yarn workspace @john/tanstack-query",
+    "@john/common": "yarn workspace @john/common",
     "@john/react": "yarn workspace @john/react",
     "@john/tanstack-query": "yarn workspace @john/tanstack-query",
     "@john/example": "yarn workspace @john/example"

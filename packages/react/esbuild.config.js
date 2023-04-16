@@ -10,7 +10,7 @@ const external = Object.keys({
 const commonConfig = {
   entryPoints: ['./src/index.ts'],
   outdir: 'dist',
-  target: 'es2015',
+  target: 'esnext',
   bundle: true,
   tsconfig: 'tsconfig.build.json',
   external: [...external],
