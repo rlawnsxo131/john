@@ -2,6 +2,7 @@
   "name": "john",
   "packageManager": "yarn@3.3.0",
   "workspaces": [
+    "example",
     "packages/common",
     "packages/react",
     "packages/tanstack-query"
@@ -12,7 +13,8 @@
     "list": "yarn workspaces list",
     "@john/common": "yarn workspace @john/tanstack-query",
     "@john/react": "yarn workspace @john/react",
-    "@john/tanstack-query": "yarn workspace @john/tanstack-query"
+    "@john/tanstack-query": "yarn workspace @john/tanstack-query",
+    "@john/example": "yarn workspace @john/example"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.58.0",
