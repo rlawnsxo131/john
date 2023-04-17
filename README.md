@@ -6,3 +6,11 @@
 제가 자주 사용하는 custom hook, function, component, type 을 모아
 라이브러리화 하려는 목적을 갖고있는 프로젝트 입니다.
 ```
+
+### Tech Stack
+
+- Yarn Berry
+- TypeScript
+- ESBuild
+- React
+- TanStack Query(React)
