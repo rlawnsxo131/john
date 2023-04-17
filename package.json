@@ -12,11 +12,11 @@
     "sdk": "yarn dlx @yarnpkg/sdks vscode",
     "upgrade": "yarn upgrade-interactive",
     "list": "yarn workspaces list",
-    "@john/esbuild-config": "yarn workspace @john/esbuild-config",
-    "@john/example": "yarn workspace @john/example",
     "@john/common": "yarn workspace @john/common",
     "@john/react": "yarn workspace @john/react",
-    "@john/react-query": "yarn workspace @john/react-query"
+    "@john/react-query": "yarn workspace @john/react-query",
+    "@john/example": "yarn workspace @john/example",
+    "@john/esbuild-config": "yarn workspace @john/esbuild-config"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.58.0",
