@@ -1,5 +1,5 @@
 {
-  "name": "@john/tanstack-query",
+  "name": "@john/react-query",
   "packageManager": "yarn@3.3.0",
   "devDependencies": {
     "@tanstack/react-query": "^4.29.1"

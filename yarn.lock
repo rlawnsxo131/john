@@ -534,6 +534,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@john/react-query@workspace:packages/react-query":
+  version: 0.0.0-use.local
+  resolution: "@john/react-query@workspace:packages/react-query"
+  dependencies:
+    "@tanstack/react-query": ^4.29.1
+  languageName: unknown
+  linkType: soft
+
 "@john/react@workspace:*, @john/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@john/react@workspace:packages/react"
@@ -550,15 +558,9 @@ __metadata:
     react-dom: ^18.2.0
     typescript: 4.9.3
   peerDependencies:
-    react: ">=16.8.0"
-  languageName: unknown
-  linkType: soft
-
-"@john/tanstack-query@workspace:packages/tanstack-query":
-  version: 0.0.0-use.local
-  resolution: "@john/tanstack-query@workspace:packages/tanstack-query"
-  dependencies:
-    "@tanstack/react-query": ^4.29.1
+    lodash.debounce: ">=4.0.8"
+    lodash.throttle: ">=4.1.1"
+    react: ">=17.0.2"
   languageName: unknown
   linkType: soft
 

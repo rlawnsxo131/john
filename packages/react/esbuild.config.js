@@ -1,9 +1,10 @@
-const { build } = require('esbuild');
+const { context } = require('esbuild');
 const pkg = require('./package.json');
 
 const watch = process.argv.includes('--watch');
+const minify = !watch;
+
 const external = Object.keys({
-  ...pkg.dependencies,
   ...pkg.peerDependencies,
 });
 
@@ -15,20 +16,24 @@ const commonConfig = {
   tsconfig: 'tsconfig.build.json',
   external: [...external],
   sourcemap: true,
+  minify,
 };
 
 Promise.all([
-  build({
+  context({
     ...commonConfig,
     format: 'cjs',
-    minify: !watch,
   }),
-  build({
+  context({
     ...commonConfig,
     format: 'esm',
     outExtension: {
       '.js': '.mjs',
     },
-    minify: !watch,
   }),
-]).catch(() => process.exit(1));
+])
+  .then(([cjsCtx, esmCtx]) => Promise.all([cjsCtx.watch(), esmCtx.watch()]))
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });

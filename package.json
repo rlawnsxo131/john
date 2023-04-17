@@ -5,7 +5,7 @@
     "example",
     "packages/common",
     "packages/react",
-    "packages/tanstack-query"
+    "packages/react-query"
   ],
   "scripts": {
     "sdk": "yarn dlx @yarnpkg/sdks vscode",
@@ -13,7 +13,7 @@
     "list": "yarn workspaces list",
     "@john/common": "yarn workspace @john/common",
     "@john/react": "yarn workspace @john/react",
-    "@john/tanstack-query": "yarn workspace @john/tanstack-query",
+    "@john/react-query": "yarn workspace @john/react-query",
     "@john/example": "yarn workspace @john/example"
   },
   "devDependencies": {
