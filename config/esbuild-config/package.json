@@ -1,0 +1,8 @@
+{
+  "name": "@john/esbuild-config",
+  "packageManager": "yarn@3.3.0",
+  "main": "index.js",
+  "devDependencies": {
+    "esbuild": "^0.17.16"
+  }
+}

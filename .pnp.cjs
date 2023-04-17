@@ -16,6 +16,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
+        "name": "@john/esbuild-config",\
+        "reference": "workspace:config/esbuild-config"\
+      },\
+      {\
         "name": "@john/example",\
         "reference": "workspace:example"\
       },\
@@ -36,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@john/common", ["workspace:packages/common"]],\
+      ["@john/esbuild-config", ["workspace:config/esbuild-config"]],\
       ["@john/example", ["workspace:example"]],\
       ["@john/monorepo", ["workspace:."]],\
       ["@john/react", ["virtual:1ee01c4f885e6c7ba971bc4a426bc0d566d7daacf998660740c450de87f21ca827e0194ad6e23a8a98967a3b0b3bfde0a8aca59859ef803c69a6a7cb932b1d28#workspace:packages/react", "workspace:packages/react"]],\
@@ -694,6 +699,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
+      ["@john/esbuild-config", [\
+        ["workspace:config/esbuild-config", {\
+          "packageLocation": "./config/esbuild-config/",\
+          "packageDependencies": [\
+            ["@john/esbuild-config", "workspace:config/esbuild-config"],\
+            ["esbuild", "npm:0.17.16"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@john/example", [\
         ["workspace:example", {\
           "packageLocation": "./example/",\
@@ -732,6 +747,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@john-react-virtual-df0889b97f/1/packages/react/",\
           "packageDependencies": [\
             ["@john/react", "virtual:1ee01c4f885e6c7ba971bc4a426bc0d566d7daacf998660740c450de87f21ca827e0194ad6e23a8a98967a3b0b3bfde0a8aca59859ef803c69a6a7cb932b1d28#workspace:packages/react"],\
+            ["@john/esbuild-config", "workspace:config/esbuild-config"],\
             ["@types/lodash.debounce", "npm:4.0.7"],\
             ["@types/lodash.throttle", "npm:4.1.7"],\
             ["@types/react", "npm:18.0.34"],\
@@ -754,6 +770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/react/",\
           "packageDependencies": [\
             ["@john/react", "workspace:packages/react"],\
+            ["@john/esbuild-config", "workspace:config/esbuild-config"],\
             ["@types/lodash.debounce", "npm:4.0.7"],\
             ["@types/lodash.throttle", "npm:4.1.7"],\
             ["@types/react", "npm:18.0.34"],\

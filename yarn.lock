@@ -505,6 +505,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@john/esbuild-config@workspace:*, @john/esbuild-config@workspace:config/esbuild-config":
+  version: 0.0.0-use.local
+  resolution: "@john/esbuild-config@workspace:config/esbuild-config"
+  dependencies:
+    esbuild: ^0.17.16
+  languageName: unknown
+  linkType: soft
+
 "@john/example@workspace:example":
   version: 0.0.0-use.local
   resolution: "@john/example@workspace:example"
@@ -546,6 +554,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@john/react@workspace:packages/react"
   dependencies:
+    "@john/esbuild-config": "workspace:*"
     "@types/lodash.debounce": ^4.0.7
     "@types/lodash.throttle": ^4.1.7
     "@types/react": ^18.0.28
