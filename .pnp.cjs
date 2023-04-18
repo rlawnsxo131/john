@@ -703,8 +703,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:config/esbuild-config", {\
           "packageLocation": "./config/esbuild-config/",\
           "packageDependencies": [\
-            ["@john/esbuild-config", "workspace:config/esbuild-config"],\
-            ["esbuild", "npm:0.17.16"]\
+            ["@john/esbuild-config", "workspace:config/esbuild-config"]\
           ],\
           "linkType": "SOFT"\
         }]\

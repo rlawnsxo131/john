@@ -508,8 +508,6 @@ __metadata:
 "@john/esbuild-config@workspace:*, @john/esbuild-config@workspace:config/esbuild-config":
   version: 0.0.0-use.local
   resolution: "@john/esbuild-config@workspace:config/esbuild-config"
-  dependencies:
-    esbuild: ^0.17.16
   languageName: unknown
   linkType: soft
 
