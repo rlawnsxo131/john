@@ -565,8 +565,6 @@ __metadata:
     react-dom: ^18.2.0
     typescript: 4.9.3
   peerDependencies:
-    lodash.debounce: ">=4.0.8"
-    lodash.throttle: ">=4.1.1"
     react: ">=17.0.2"
   languageName: unknown
   linkType: soft
