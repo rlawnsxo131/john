@@ -1,11 +1,11 @@
-function config({
+const config = ({
   entryPoints = ['./src/index.ts'],
   outdir = 'dist',
   tsconfig = 'tsconfig.json',
   external = [],
   minify = false,
-}) {
-  return new Promise((resolve) =>
+}) =>
+  new Promise((resolve) =>
     resolve({
       cjs: {
         entryPoints,
@@ -32,6 +32,5 @@ function config({
       },
     }),
   );
-}
 
 module.exports = config;
