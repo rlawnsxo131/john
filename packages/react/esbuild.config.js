@@ -9,45 +9,29 @@ const external = Object.keys({
   ...pkg.peerDependencies,
 });
 
-const commonConfig = {
-  external: [...external],
+config({
+  tsconfig: './tsconfig.build.json',
+  external,
   minify,
-  ...config({
-    tsconfig: 'tsconfig.build.json',
-  }),
-};
-
-if (watch) {
-  Promise.all([
-    context({
-      ...commonConfig,
-      format: 'cjs',
-    }),
-    context({
-      ...commonConfig,
-      format: 'esm',
-      outExtension: {
-        '.js': '.mjs',
-      },
-    }),
-  ])
-    .then((contexts) => Promise.all(contexts.map((ctx) => ctx.watch())))
-    .catch((e) => {
-      console.error(e);
-      process.exit(1);
-    });
-} else {
-  Promise.all([
-    build({
-      ...commonConfig,
-      format: 'cjs',
-    }),
-    build({
-      ...commonConfig,
-      format: 'cjs',
-    }),
-  ]).catch((e) => {
+})
+  .then(({ cjs, esm }) =>
+    watch
+      ? Promise.all([
+          context({
+            ...cjs,
+          }),
+          context({
+            ...esm,
+          }),
+        ]).then((contexts) => Promise.all(contexts.map((ctx) => ctx.watch())))
+      : Promise.all([
+          build({
+            ...cjs,
+            ...esm,
+          }),
+        ]),
+  )
+  .catch((e) => {
     console.error(e);
     process.exit(1);
   });
-}
