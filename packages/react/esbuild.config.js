@@ -27,6 +27,8 @@ config({
       : Promise.all([
           build({
             ...cjs,
+          }),
+          build({
             ...esm,
           }),
         ]),
