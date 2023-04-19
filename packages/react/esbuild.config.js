@@ -10,7 +10,7 @@ const external = Object.keys({
 });
 
 config({
-  tsconfig: './tsconfig.build.json',
+  tsconfig: 'tsconfig.build.json',
   external,
   minify,
 })
