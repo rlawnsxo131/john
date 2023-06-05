@@ -17,7 +17,7 @@
     "@john/react-query": "yarn workspace @john/react-query",
     "@john/example": "yarn workspace @john/example",
     "@john/esbuild-config": "yarn workspace @john/esbuild-config",
-    "test": "jest"
+    "test:all": "jest"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.58.0",
