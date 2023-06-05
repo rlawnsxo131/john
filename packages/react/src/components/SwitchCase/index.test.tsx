@@ -1,5 +1,6 @@
-import { SwitchCase } from './SwitchCase';
 import { render } from '@testing-library/react';
+
+import { SwitchCase } from './SwitchCase';
 
 function prepare(key: string) {
   return render(

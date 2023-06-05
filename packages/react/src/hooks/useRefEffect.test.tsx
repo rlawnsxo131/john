@@ -1,5 +1,6 @@
 import { render } from '@testing-library/react';
-import { DependencyList } from 'react';
+import type { DependencyList } from 'react';
+
 import { useRefEffect } from './useRefEffect';
 
 const TestComponent = ({
