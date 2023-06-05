@@ -5,7 +5,10 @@
     "outDir": "./dist",
     "emitDeclarationOnly": true,
     "declaration": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "exclude": ["dist/*", "esbuild*"]
+  "exclude": ["dist/*", "esbuild*", "src/**/*.test.*"]
 }

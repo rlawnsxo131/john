@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react';
 import { Children, cloneElement } from 'react';
 
-import { useDebounce } from '../../hooks/useDebounce';
+import { useDebounce } from '@/hooks';
 
 export type DebounceClickProps = {
   /**
