@@ -15,7 +15,8 @@
     "build:dts": "tsc --build tsconfig.build.json",
     "build:js": "node ./esbuild.config.js",
     "build": "yarn build:dts && yarn build:js",
-    "build:watch": "yarn build:dts --watch & yarn build:js --watch"
+    "build:watch": "yarn build:dts --watch & yarn build:js --watch",
+    "test": "jest"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
@@ -26,14 +27,20 @@
   },
   "devDependencies": {
     "@john/esbuild-config": "workspace:*",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.2",
     "@types/lodash.debounce": "^4.0.7",
     "@types/lodash.throttle": "^4.1.7",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@types/testing-library__jest-dom": "^5.14.6",
     "@vitejs/plugin-react": "^3.1.0",
     "esbuild": "^0.17.16",
+    "jest-environment-jsdom": "^29.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "ts-jest": "^29.1.0",
     "typescript": "4.9.3"
   }
 }
