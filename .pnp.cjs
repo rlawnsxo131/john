@@ -60,7 +60,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:4.6.0"],\
             ["eslint-plugin-simple-import-sort", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:10.0.0"],\
             ["jest", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:29.5.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["ts-node", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:10.9.1"],\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1077,6 +1078,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@cspotcode/source-map-support", [\
+        ["npm:0.8.1", {\
+          "packageLocation": "./.yarn/cache/@cspotcode-source-map-support-npm-0.8.1-964f2de99d-5718f26708.zip/node_modules/@cspotcode/source-map-support/",\
+          "packageDependencies": [\
+            ["@cspotcode/source-map-support", "npm:0.8.1"],\
+            ["@jridgewell/trace-mapping", "npm:0.3.9"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@esbuild/android-arm", [\
         ["npm:0.17.16", {\
           "packageLocation": "./.yarn/unplugged/@esbuild-android-arm-npm-0.17.16-1647c276fd/node_modules/@esbuild/android-arm/",\
@@ -1685,7 +1696,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-react", "virtual:1ee01c4f885e6c7ba971bc4a426bc0d566d7daacf998660740c450de87f21ca827e0194ad6e23a8a98967a3b0b3bfde0a8aca59859ef803c69a6a7cb932b1d28#npm:3.1.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:1ee01c4f885e6c7ba971bc4a426bc0d566d7daacf998660740c450de87f21ca827e0194ad6e23a8a98967a3b0b3bfde0a8aca59859ef803c69a6a7cb932b1d28#npm:18.2.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"],\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
             ["vite", "virtual:1ee01c4f885e6c7ba971bc4a426bc0d566d7daacf998660740c450de87f21ca827e0194ad6e23a8a98967a3b0b3bfde0a8aca59859ef803c69a6a7cb932b1d28#npm:4.2.1"]\
           ],\
           "linkType": "SOFT"\
@@ -1703,7 +1714,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:4.6.0"],\
             ["eslint-plugin-simple-import-sort", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:10.0.0"],\
             ["jest", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:29.5.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["ts-node", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:10.9.1"],\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1730,7 +1742,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:1ee01c4f885e6c7ba971bc4a426bc0d566d7daacf998660740c450de87f21ca827e0194ad6e23a8a98967a3b0b3bfde0a8aca59859ef803c69a6a7cb932b1d28#npm:18.2.0"],\
             ["ts-jest", "virtual:df0889b97ffecac304ffcb44cdcc8eebb254ebb8bb04d92243b203d03db1bc469112437db4b8200dbf1a30fb32b8e6f145d25b1f5243b3510d71d877f3f3b2a3#npm:29.1.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "packagePeers": [\
             "@types/react",\
@@ -1759,7 +1771,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:1ee01c4f885e6c7ba971bc4a426bc0d566d7daacf998660740c450de87f21ca827e0194ad6e23a8a98967a3b0b3bfde0a8aca59859ef803c69a6a7cb932b1d28#npm:18.2.0"],\
             ["ts-jest", "virtual:df0889b97ffecac304ffcb44cdcc8eebb254ebb8bb04d92243b203d03db1bc469112437db4b8200dbf1a30fb32b8e6f145d25b1f5243b3510d71d877f3f3b2a3#npm:29.1.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1791,6 +1803,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@jridgewell-resolve-uri-npm-3.1.0-6ff2351e61-b5ceaaf9a1.zip/node_modules/@jridgewell/resolve-uri/",\
           "packageDependencies": [\
             ["@jridgewell/resolve-uri", "npm:3.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/@jridgewell-resolve-uri-npm-3.1.1-aa2de3f210-f5b441fe79.zip/node_modules/@jridgewell/resolve-uri/",\
+          "packageDependencies": [\
+            ["@jridgewell/resolve-uri", "npm:3.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1827,6 +1846,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jridgewell/trace-mapping", "npm:0.3.18"],\
             ["@jridgewell/resolve-uri", "npm:3.1.0"],\
             ["@jridgewell/sourcemap-codec", "npm:1.4.14"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.3.9", {\
+          "packageLocation": "./.yarn/cache/@jridgewell-trace-mapping-npm-0.3.9-91625cd7fb-d89597752f.zip/node_modules/@jridgewell/trace-mapping/",\
+          "packageDependencies": [\
+            ["@jridgewell/trace-mapping", "npm:0.3.9"],\
+            ["@jridgewell/resolve-uri", "npm:3.1.1"],\
+            ["@jridgewell/sourcemap-codec", "npm:1.4.15"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2022,6 +2050,42 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip/node_modules/@tootallnate/once/",\
           "packageDependencies": [\
             ["@tootallnate/once", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tsconfig/node10", [\
+        ["npm:1.0.9", {\
+          "packageLocation": "./.yarn/cache/@tsconfig-node10-npm-1.0.9-f2e2d20feb-a33ae4dc2a.zip/node_modules/@tsconfig/node10/",\
+          "packageDependencies": [\
+            ["@tsconfig/node10", "npm:1.0.9"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tsconfig/node12", [\
+        ["npm:1.0.11", {\
+          "packageLocation": "./.yarn/cache/@tsconfig-node12-npm-1.0.11-9710d1c61b-5ce29a41b1.zip/node_modules/@tsconfig/node12/",\
+          "packageDependencies": [\
+            ["@tsconfig/node12", "npm:1.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tsconfig/node14", [\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/@tsconfig-node14-npm-1.0.3-15321421d2-19275fe80c.zip/node_modules/@tsconfig/node14/",\
+          "packageDependencies": [\
+            ["@tsconfig/node14", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tsconfig/node16", [\
+        ["npm:1.0.4", {\
+          "packageLocation": "./.yarn/cache/@tsconfig-node16-npm-1.0.4-b7cb87d859-2023197859.zip/node_modules/@tsconfig/node16/",\
+          "packageDependencies": [\
+            ["@tsconfig/node16", "npm:1.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2321,7 +2385,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["natural-compare-lite", "npm:1.4.0"],\
             ["semver", "npm:7.4.0"],\
             ["tsutils", "virtual:68d1b8200ca38d6f02488b376b7b830a34047a22a3860895882763eac5c5391980dac81d7ac0a6ba7482b092b293706b8f690f7dd59d1c19c5df1aa869708eb3#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -2353,7 +2417,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/typescript-estree", "virtual:6caecf31101958d2e6d1038efe8b86e5086c95d072d593fe1dc0f6fc1240093f4b2530b9b6d68844a495d8a7580729e964ad656eac7b5789b94a949fa0b4ac0e#npm:5.58.0"],\
             ["debug", "virtual:d308674d86394045a3178d86fc0909ad49c0ac9801ba12776e517bdaf3dfe3537e24a9c79fd8f2bd15e4a7d8be7fae6252874fd98e2dbd2728333f46ec685014#npm:4.3.4"],\
             ["eslint", "npm:8.38.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -2394,7 +2458,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:d308674d86394045a3178d86fc0909ad49c0ac9801ba12776e517bdaf3dfe3537e24a9c79fd8f2bd15e4a7d8be7fae6252874fd98e2dbd2728333f46ec685014#npm:4.3.4"],\
             ["eslint", "npm:8.38.0"],\
             ["tsutils", "virtual:68d1b8200ca38d6f02488b376b7b830a34047a22a3860895882763eac5c5391980dac81d7ac0a6ba7482b092b293706b8f690f7dd59d1c19c5df1aa869708eb3#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -2434,7 +2498,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-glob", "npm:4.0.3"],\
             ["semver", "npm:7.4.0"],\
             ["tsutils", "virtual:68d1b8200ca38d6f02488b376b7b830a34047a22a3860895882763eac5c5391980dac81d7ac0a6ba7482b092b293706b8f690f7dd59d1c19c5df1aa869708eb3#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -2735,6 +2799,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["are-we-there-yet", "npm:3.0.1"],\
             ["delegates", "npm:1.0.0"],\
             ["readable-stream", "npm:3.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["arg", [\
+        ["npm:4.1.3", {\
+          "packageLocation": "./.yarn/cache/arg-npm-4.1.3-1748b966a8-544af8dd3f.zip/node_modules/arg/",\
+          "packageDependencies": [\
+            ["arg", "npm:4.1.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3285,6 +3358,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["create-require", [\
+        ["npm:1.1.1", {\
+          "packageLocation": "./.yarn/cache/create-require-npm-1.1.1-839884ca2e-a9a1503d43.zip/node_modules/create-require/",\
+          "packageDependencies": [\
+            ["create-require", "npm:1.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["cross-spawn", [\
         ["npm:7.0.3", {\
           "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-671cc7c728.zip/node_modules/cross-spawn/",\
@@ -3482,6 +3564,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/detect-newline-npm-3.1.0-6d33fa8d37-ae6cd429c4.zip/node_modules/detect-newline/",\
           "packageDependencies": [\
             ["detect-newline", "npm:3.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["diff", [\
+        ["npm:4.0.2", {\
+          "packageLocation": "./.yarn/cache/diff-npm-4.0.2-73133c7102-f2c09b0ce4.zip/node_modules/diff/",\
+          "packageDependencies": [\
+            ["diff", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7229,7 +7320,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.memoize", "npm:4.1.2"],\
             ["make-error", "npm:1.3.6"],\
             ["semver", "npm:7.5.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"],\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
             ["yargs-parser", "npm:21.1.1"]\
           ],\
           "packagePeers": [\
@@ -7244,6 +7335,51 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "babel-jest",\
             "esbuild",\
             "jest",\
+            "typescript"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ts-node", [\
+        ["npm:10.9.1", {\
+          "packageLocation": "./.yarn/cache/ts-node-npm-10.9.1-6c268be7f4-090adff130.zip/node_modules/ts-node/",\
+          "packageDependencies": [\
+            ["ts-node", "npm:10.9.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:10.9.1", {\
+          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-40d7f14e50/0/cache/ts-node-npm-10.9.1-6c268be7f4-090adff130.zip/node_modules/ts-node/",\
+          "packageDependencies": [\
+            ["ts-node", "virtual:126b4b164d411660eee017f789538fd39e95c4b4a528ca2c1d61f7166bb10225151f97e5302985e745222c992a8b3796c35fdb9d83d9c9ada7f8f3d8a2493bd1#npm:10.9.1"],\
+            ["@cspotcode/source-map-support", "npm:0.8.1"],\
+            ["@swc/core", null],\
+            ["@swc/wasm", null],\
+            ["@tsconfig/node10", "npm:1.0.9"],\
+            ["@tsconfig/node12", "npm:1.0.11"],\
+            ["@tsconfig/node14", "npm:1.0.3"],\
+            ["@tsconfig/node16", "npm:1.0.4"],\
+            ["@types/node", null],\
+            ["@types/swc__core", null],\
+            ["@types/swc__wasm", null],\
+            ["@types/typescript", null],\
+            ["acorn", "npm:8.8.2"],\
+            ["acorn-walk", "npm:8.2.0"],\
+            ["arg", "npm:4.1.3"],\
+            ["create-require", "npm:1.1.1"],\
+            ["diff", "npm:4.0.2"],\
+            ["make-error", "npm:1.3.6"],\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
+            ["v8-compile-cache-lib", "npm:3.0.1"],\
+            ["yn", "npm:3.1.1"]\
+          ],\
+          "packagePeers": [\
+            "@swc/core",\
+            "@swc/wasm",\
+            "@types/node",\
+            "@types/swc__core",\
+            "@types/swc__wasm",\
+            "@types/typescript",\
             "typescript"\
           ],\
           "linkType": "HARD"\
@@ -7286,7 +7422,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tsutils", "virtual:68d1b8200ca38d6f02488b376b7b830a34047a22a3860895882763eac5c5391980dac81d7ac0a6ba7482b092b293706b8f690f7dd59d1c19c5df1aa869708eb3#npm:3.21.0"],\
             ["@types/typescript", null],\
             ["tslib", "npm:1.14.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -7339,10 +7475,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-38a6667774-d7bdcf5e18.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-b9b216bc0d-67ca21a387.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=a66ed4"]\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7448,6 +7584,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/util-deprecate-npm-1.0.2-e3fe1a219c-474acf1146.zip/node_modules/util-deprecate/",\
           "packageDependencies": [\
             ["util-deprecate", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["v8-compile-cache-lib", [\
+        ["npm:3.0.1", {\
+          "packageLocation": "./.yarn/cache/v8-compile-cache-lib-npm-3.0.1-4886071ece-78089ad549.zip/node_modules/v8-compile-cache-lib/",\
+          "packageDependencies": [\
+            ["v8-compile-cache-lib", "npm:3.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7765,6 +7910,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["yn", [\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/yn-npm-3.1.1-8ad4259784-2c487b0e14.zip/node_modules/yn/",\
+          "packageDependencies": [\
+            ["yn", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["yocto-queue", [\
         ["npm:0.1.0", {\
           "packageLocation": "./.yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip/node_modules/yocto-queue/",\
@@ -7785,7 +7939,6 @@ const StringDecoder = require('string_decoder');
 const url = require('url');
 const os = require('os');
 const nodeUtils = require('util');
-const readline = require('readline');
 const assert = require('assert');
 const stream = require('stream');
 const zlib = require('zlib');
@@ -9268,7 +9421,7 @@ const DEFAULT_COMPRESSION_LEVEL = `mixed`;
 function toUnixTimestamp(time) {
   if (typeof time === `string` && String(+time) === time)
     return +time;
-  if (typeof time === `number` && Number.isFinite(time)) {
+  if (Number.isFinite(time)) {
     if (time < 0) {
       return Date.now() / 1e3;
     } else {
@@ -9420,10 +9573,6 @@ class ZipFS extends BasePortableFakeFS {
     this.prepareClose();
     if (!this.lzSource)
       throw new Error(`ZipFS was not created from a Buffer`);
-    if (this.entries.size === 0) {
-      this.discardAndClose();
-      return makeEmptyArchive();
-    }
     try {
       this.libzip.source.keep(this.lzSource);
       if (this.libzip.close(this.zip) === -1)
@@ -9850,7 +9999,7 @@ class ZipFS extends BasePortableFakeFS {
       resolvedP = ppath.resolve(parentP, ppath.basename(resolvedP));
       if (!resolveLastComponent || this.symlinkCount === 0)
         break;
-      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1), 0);
+      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1));
       if (index === -1)
         break;
       if (this.isSymbolicLink(index)) {
@@ -9875,7 +10024,7 @@ class ZipFS extends BasePortableFakeFS {
   allocateUnattachedSource(content) {
     const error = this.libzip.struct.errorS();
     const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, 1, error);
+    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, true, error);
     if (source === 0) {
       this.libzip.free(error);
       throw this.makeLibzipError(error);
@@ -9884,7 +10033,7 @@ class ZipFS extends BasePortableFakeFS {
   }
   allocateSource(content) {
     const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, 1);
+    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, true);
     if (source === 0) {
       this.libzip.free(buffer);
       throw this.makeLibzipError(this.libzip.getError(this.zip));
@@ -11702,12 +11851,6 @@ class FileHandle {
     } finally {
       this[kUnref]();
     }
-  }
-  readLines(options) {
-    return readline.createInterface({
-      input: this.createReadStream(options),
-      crlfDelay: Infinity
-    });
   }
   async stat(opts) {
     try {
@@ -16318,7 +16461,7 @@ const makeInterface = (libzip) => ({
     locate: libzip.cwrap(`zip_name_locate`, `number`, [`number`, `string`, `number`])
   },
   source: {
-    fromUnattachedBuffer: libzip.cwrap(`zip_source_buffer_create`, `number`, [`number`, ...number64, `number`, `number`]),
+    fromUnattachedBuffer: libzip.cwrap(`zip_source_buffer_create`, `number`, [`number`, `number`, `number`, `number`]),
     fromBuffer: libzip.cwrap(`zip_source_buffer`, `number`, [`number`, `number`, ...number64, `number`]),
     free: libzip.cwrap(`zip_source_free`, null, [`number`]),
     keep: libzip.cwrap(`zip_source_keep`, null, [`number`]),
@@ -16404,9 +16547,6 @@ function getPathForDisplay(p) {
   return npath.normalize(npath.fromPortablePath(p));
 }
 
-const [major, minor] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
-const WATCH_MODE_MESSAGE_USES_ARRAYS = major > 19 || major === 19 && minor >= 2 || major === 18 && minor >= 13;
-
 const builtinModules = new Set(require$$0.Module.builtinModules || Object.keys(process.binding(`natives`)));
 const isBuiltinModule = (request) => request.startsWith(`node:`) || builtinModules.has(request);
 function readPackageScope(checkPath) {
@@ -16441,19 +16581,13 @@ Instead change the require of ${basename} in ${parentPath} to a dynamic import()
   err.code = `ERR_REQUIRE_ESM`;
   return err;
 }
-function reportRequiredFilesToWatchMode(files) {
-  if (process.env.WATCH_REPORT_DEPENDENCIES && process.send) {
-    files = files.map((filename) => npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))));
-    if (WATCH_MODE_MESSAGE_USES_ARRAYS) {
-      process.send({ "watch:require": files });
-    } else {
-      for (const filename of files) {
-        process.send({ "watch:require": filename });
-      }
-    }
+
+const shouldReportRequiredModules = process.env.WATCH_REPORT_DEPENDENCIES;
+function reportModuleToWatchMode(filename) {
+  if (shouldReportRequiredModules && process.send) {
+    process.send({ "watch:require": npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))) });
   }
 }
-
 function applyPatch(pnpapi, opts) {
   const defaultCache = {};
   let enableNativeHooks = true;
@@ -16513,7 +16647,7 @@ function applyPatch(pnpapi, opts) {
     }
     const module = new require$$0.Module(modulePath, parent != null ? parent : void 0);
     module.pnpApiPath = moduleApiPath;
-    reportRequiredFilesToWatchMode([modulePath]);
+    reportModuleToWatchMode(modulePath);
     entry.cache[modulePath] = module;
     if (isMain) {
       process.mainModule = module;
@@ -16757,6 +16891,118 @@ function hydrateRuntimeState(data, { basePath }) {
   };
 }
 
+/**
+ * @param {object} exports
+ * @param {Set<string>} keys
+ */
+function loop(exports, keys) {
+	if (typeof exports === 'string') {
+		return exports;
+	}
+
+	if (exports) {
+		let idx, tmp;
+		if (Array.isArray(exports)) {
+			for (idx=0; idx < exports.length; idx++) {
+				if (tmp = loop(exports[idx], keys)) return tmp;
+			}
+		} else {
+			for (idx in exports) {
+				if (keys.has(idx)) {
+					return loop(exports[idx], keys);
+				}
+			}
+		}
+	}
+}
+
+/**
+ * @param {string} name The package name
+ * @param {string} entry The target entry, eg "."
+ * @param {number} [condition] Unmatched condition?
+ */
+function bail(name, entry, condition) {
+	throw new Error(
+		condition
+		? `No known conditions for "${entry}" entry in "${name}" package`
+		: `Missing "${entry}" export in "${name}" package`
+	);
+}
+
+/**
+ * @param {string} name the package name
+ * @param {string} entry the target path/import
+ */
+function toName(name, entry) {
+	return entry === name ? '.'
+		: entry[0] === '.' ? entry
+		: entry.replace(new RegExp('^' + name + '\/'), './');
+}
+
+/**
+ * @param {object} pkg package.json contents
+ * @param {string} [entry] entry name or import path
+ * @param {object} [options]
+ * @param {boolean} [options.browser]
+ * @param {boolean} [options.require]
+ * @param {string[]} [options.conditions]
+ * @param {boolean} [options.unsafe]
+ */
+function resolve(pkg, entry='.', options={}) {
+	let { name, exports } = pkg;
+
+	if (exports) {
+		let { browser, require, unsafe, conditions=[] } = options;
+
+		let target = toName(name, entry);
+		if (target[0] !== '.') target = './' + target;
+
+		if (typeof exports === 'string') {
+			return target === '.' ? exports : bail(name, target);
+		}
+
+		let allows = new Set(['default', ...conditions]);
+		unsafe || allows.add(require ? 'require' : 'import');
+		unsafe || allows.add(browser ? 'browser' : 'node');
+
+		let key, tmp, isSingle=false;
+
+		for (key in exports) {
+			isSingle = key[0] !== '.';
+			break;
+		}
+
+		if (isSingle) {
+			return target === '.'
+				? loop(exports, allows) || bail(name, target, 1)
+				: bail(name, target);
+		}
+
+		if (tmp = exports[target]) {
+			return loop(tmp, allows) || bail(name, target, 1);
+		}
+
+		for (key in exports) {
+			tmp = key[key.length - 1];
+			if (tmp === '/' && target.startsWith(key)) {
+				return (tmp = loop(exports[key], allows))
+					? (tmp + target.substring(key.length))
+					: bail(name, target, 1);
+			}
+			if (tmp === '*' && target.startsWith(key.slice(0, -1))) {
+				// do not trigger if no *content* to inject
+				if (target.substring(key.length - 1).length > 0) {
+					return (tmp = loop(exports[key], allows))
+						? tmp.replace('*', target.substring(key.length - 1))
+						: bail(name, target, 1);
+				}
+			}
+		}
+
+		return bail(name, target);
+	}
+}
+
 const ArrayIsArray = Array.isArray;
 const JSONStringify = JSON.stringify;
 const ObjectGetOwnPropertyNames = Object.getOwnPropertyNames;
@@ -16814,15 +17060,6 @@ const ERR_INVALID_PACKAGE_CONFIG = createErrorType(
   `ERR_INVALID_PACKAGE_CONFIG`,
   (path, base, message) => {
     return `Invalid package config ${path}${base ? ` while importing ${base}` : ``}${message ? `. ${message}` : ``}`;
-  },
-  Error
-);
-const ERR_PACKAGE_PATH_NOT_EXPORTED = createErrorType(
-  "ERR_PACKAGE_PATH_NOT_EXPORTED",
-  (pkgPath, subpath, base = void 0) => {
-    if (subpath === ".")
-      return `No "exports" main defined in ${pkgPath}package.json${base ? ` imported from ${base}` : ""}`;
-    return `Package subpath '${subpath}' is not defined by "exports" in ${pkgPath}package.json${base ? ` imported from ${base}` : ""}`;
   },
   Error
 );
@@ -17145,121 +17382,12 @@ function patternKeyCompare(a, b) {
     return 1;
   return 0;
 }
-function isConditionalExportsMainSugar(exports, packageJSONUrl, base) {
-  if (typeof exports === "string" || ArrayIsArray(exports))
-    return true;
-  if (typeof exports !== "object" || exports === null)
-    return false;
-  const keys = ObjectGetOwnPropertyNames(exports);
-  let isConditionalSugar = false;
-  let i = 0;
-  for (let j = 0; j < keys.length; j++) {
-    const key = keys[j];
-    const curIsConditionalSugar = key === "" || key[0] !== ".";
-    if (i++ === 0) {
-      isConditionalSugar = curIsConditionalSugar;
-    } else if (isConditionalSugar !== curIsConditionalSugar) {
-      throw new ERR_INVALID_PACKAGE_CONFIG(
-        url.fileURLToPath(packageJSONUrl),
-        base,
-        `"exports" cannot contain some keys starting with '.' and some not. The exports object must either be an object of package subpath keys or an object of main entry condition name keys only.`
-      );
-    }
-  }
-  return isConditionalSugar;
-}
-function throwExportsNotFound(subpath, packageJSONUrl, base) {
-  throw new ERR_PACKAGE_PATH_NOT_EXPORTED(
-    url.fileURLToPath(new URL(".", packageJSONUrl)),
-    subpath,
-    base && url.fileURLToPath(base)
-  );
-}
-const emittedPackageWarnings = /* @__PURE__ */ new Set();
-function emitTrailingSlashPatternDeprecation(match, pjsonUrl, base) {
-  const pjsonPath = url.fileURLToPath(pjsonUrl);
-  if (emittedPackageWarnings.has(pjsonPath + "|" + match))
-    return;
-  emittedPackageWarnings.add(pjsonPath + "|" + match);
-  process.emitWarning(
-    `Use of deprecated trailing slash pattern mapping "${match}" in the "exports" field module resolution of the package at ${pjsonPath}${base ? ` imported from ${url.fileURLToPath(base)}` : ""}. Mapping specifiers ending in "/" is no longer supported.`,
-    "DeprecationWarning",
-    "DEP0155"
-  );
-}
-function packageExportsResolve({
-  packageJSONUrl,
-  packageSubpath,
-  exports,
+function packageImportsResolve({
+  name,
   base,
-  conditions
+  conditions,
+  readFileSyncFn
 }) {
-  if (isConditionalExportsMainSugar(exports, packageJSONUrl, base))
-    exports = { ".": exports };
-  if (ObjectPrototypeHasOwnProperty(exports, packageSubpath) && !StringPrototypeIncludes(packageSubpath, "*") && !StringPrototypeEndsWith(packageSubpath, "/")) {
-    const target = exports[packageSubpath];
-    const resolveResult = resolvePackageTarget(
-      packageJSONUrl,
-      target,
-      "",
-      packageSubpath,
-      base,
-      false,
-      false,
-      conditions
-    );
-    if (resolveResult == null) {
-      throwExportsNotFound(packageSubpath, packageJSONUrl, base);
-    }
-    return resolveResult;
-  }
-  let bestMatch = "";
-  let bestMatchSubpath;
-  const keys = ObjectGetOwnPropertyNames(exports);
-  for (let i = 0; i < keys.length; i++) {
-    const key = keys[i];
-    const patternIndex = StringPrototypeIndexOf(key, "*");
-    if (patternIndex !== -1 && StringPrototypeStartsWith(
-      packageSubpath,
-      StringPrototypeSlice(key, 0, patternIndex)
-    )) {
-      if (StringPrototypeEndsWith(packageSubpath, "/"))
-        emitTrailingSlashPatternDeprecation(
-          packageSubpath,
-          packageJSONUrl,
-          base
-        );
-      const patternTrailer = StringPrototypeSlice(key, patternIndex + 1);
-      if (packageSubpath.length >= key.length && StringPrototypeEndsWith(packageSubpath, patternTrailer) && patternKeyCompare(bestMatch, key) === 1 && StringPrototypeLastIndexOf(key, "*") === patternIndex) {
-        bestMatch = key;
-        bestMatchSubpath = StringPrototypeSlice(
-          packageSubpath,
-          patternIndex,
-          packageSubpath.length - patternTrailer.length
-        );
-      }
-    }
-  }
-  if (bestMatch) {
-    const target = exports[bestMatch];
-    const resolveResult = resolvePackageTarget(
-      packageJSONUrl,
-      target,
-      bestMatchSubpath,
-      bestMatch,
-      base,
-      true,
-      false,
-      conditions
-    );
-    if (resolveResult == null) {
-      throwExportsNotFound(packageSubpath, packageJSONUrl, base);
-    }
-    return resolveResult;
-  }
-  throwExportsNotFound(packageSubpath, packageJSONUrl, base);
-}
-function packageImportsResolve({ name, base, conditions, readFileSyncFn }) {
   if (name === "#" || StringPrototypeStartsWith(name, "#/") || StringPrototypeEndsWith(name, "/")) {
     const reason = "is not a valid internal imports specifier name";
     throw new ERR_INVALID_MODULE_SPECIFIER(name, reason, url.fileURLToPath(base));
@@ -17326,291 +17454,6 @@ function packageImportsResolve({ name, base, conditions, readFileSyncFn }) {
     }
   }
   throwImportNotDefined(name, packageJSONUrl, base);
-}
-
-const flagSymbol = Symbol('arg flag');
-
-class ArgError extends Error {
-	constructor(msg, code) {
-		super(msg);
-		this.name = 'ArgError';
-		this.code = code;
-
-		Object.setPrototypeOf(this, ArgError.prototype);
-	}
-}
-
-function arg(
-	opts,
-	{
-		argv = process.argv.slice(2),
-		permissive = false,
-		stopAtPositional = false
-	} = {}
-) {
-	if (!opts) {
-		throw new ArgError(
-			'argument specification object is required',
-			'ARG_CONFIG_NO_SPEC'
-		);
-	}
-
-	const result = { _: [] };
-
-	const aliases = {};
-	const handlers = {};
-
-	for (const key of Object.keys(opts)) {
-		if (!key) {
-			throw new ArgError(
-				'argument key cannot be an empty string',
-				'ARG_CONFIG_EMPTY_KEY'
-			);
-		}
-
-		if (key[0] !== '-') {
-			throw new ArgError(
-				`argument key must start with '-' but found: '${key}'`,
-				'ARG_CONFIG_NONOPT_KEY'
-			);
-		}
-
-		if (key.length === 1) {
-			throw new ArgError(
-				`argument key must have a name; singular '-' keys are not allowed: ${key}`,
-				'ARG_CONFIG_NONAME_KEY'
-			);
-		}
-
-		if (typeof opts[key] === 'string') {
-			aliases[key] = opts[key];
-			continue;
-		}
-
-		let type = opts[key];
-		let isFlag = false;
-
-		if (
-			Array.isArray(type) &&
-			type.length === 1 &&
-			typeof type[0] === 'function'
-		) {
-			const [fn] = type;
-			type = (value, name, prev = []) => {
-				prev.push(fn(value, name, prev[prev.length - 1]));
-				return prev;
-			};
-			isFlag = fn === Boolean || fn[flagSymbol] === true;
-		} else if (typeof type === 'function') {
-			isFlag = type === Boolean || type[flagSymbol] === true;
-		} else {
-			throw new ArgError(
-				`type missing or not a function or valid array type: ${key}`,
-				'ARG_CONFIG_VAD_TYPE'
-			);
-		}
-
-		if (key[1] !== '-' && key.length > 2) {
-			throw new ArgError(
-				`short argument keys (with a single hyphen) must have only one character: ${key}`,
-				'ARG_CONFIG_SHORTOPT_TOOLONG'
-			);
-		}
-
-		handlers[key] = [type, isFlag];
-	}
-
-	for (let i = 0, len = argv.length; i < len; i++) {
-		const wholeArg = argv[i];
-
-		if (stopAtPositional && result._.length > 0) {
-			result._ = result._.concat(argv.slice(i));
-			break;
-		}
-
-		if (wholeArg === '--') {
-			result._ = result._.concat(argv.slice(i + 1));
-			break;
-		}
-
-		if (wholeArg.length > 1 && wholeArg[0] === '-') {
-			/* eslint-disable operator-linebreak */
-			const separatedArguments =
-				wholeArg[1] === '-' || wholeArg.length === 2
-					? [wholeArg]
-					: wholeArg
-							.slice(1)
-							.split('')
-							.map((a) => `-${a}`);
-			/* eslint-enable operator-linebreak */
-
-			for (let j = 0; j < separatedArguments.length; j++) {
-				const arg = separatedArguments[j];
-				const [originalArgName, argStr] =
-					arg[1] === '-' ? arg.split(/=(.*)/, 2) : [arg, undefined];
-
-				let argName = originalArgName;
-				while (argName in aliases) {
-					argName = aliases[argName];
-				}
-
-				if (!(argName in handlers)) {
-					if (permissive) {
-						result._.push(arg);
-						continue;
-					} else {
-						throw new ArgError(
-							`unknown or unexpected option: ${originalArgName}`,
-							'ARG_UNKNOWN_OPTION'
-						);
-					}
-				}
-
-				const [type, isFlag] = handlers[argName];
-
-				if (!isFlag && j + 1 < separatedArguments.length) {
-					throw new ArgError(
-						`option requires argument (but was followed by another short argument): ${originalArgName}`,
-						'ARG_MISSING_REQUIRED_SHORTARG'
-					);
-				}
-
-				if (isFlag) {
-					result[argName] = type(true, argName, result[argName]);
-				} else if (argStr === undefined) {
-					if (
-						argv.length < i + 2 ||
-						(argv[i + 1].length > 1 &&
-							argv[i + 1][0] === '-' &&
-							!(
-								argv[i + 1].match(/^-?\d*(\.(?=\d))?\d*$/) &&
-								(type === Number ||
-									// eslint-disable-next-line no-undef
-									(typeof BigInt !== 'undefined' && type === BigInt))
-							))
-					) {
-						const extended =
-							originalArgName === argName ? '' : ` (alias for ${argName})`;
-						throw new ArgError(
-							`option requires argument: ${originalArgName}${extended}`,
-							'ARG_MISSING_REQUIRED_LONGARG'
-						);
-					}
-
-					result[argName] = type(argv[i + 1], argName, result[argName]);
-					++i;
-				} else {
-					result[argName] = type(argStr, argName, result[argName]);
-				}
-			}
-		} else {
-			result._.push(wholeArg);
-		}
-	}
-
-	return result;
-}
-
-arg.flag = (fn) => {
-	fn[flagSymbol] = true;
-	return fn;
-};
-
-// Utility types
-arg.COUNT = arg.flag((v, name, existingCount) => (existingCount || 0) + 1);
-
-// Expose error class
-arg.ArgError = ArgError;
-
-var arg_1 = arg;
-
-/**
-  @license
-  The MIT License (MIT)
-
-  Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-  THE SOFTWARE.
-*/
-function getOptionValue(opt) {
-  parseOptions();
-  return options[opt];
-}
-let options;
-function parseOptions() {
-  if (!options) {
-    options = {
-      "--conditions": [],
-      ...parseArgv(getNodeOptionsEnvArgv()),
-      ...parseArgv(process.execArgv)
-    };
-  }
-}
-function parseArgv(argv) {
-  return arg_1(
-    {
-      "--conditions": [String],
-      "-C": "--conditions"
-    },
-    {
-      argv,
-      permissive: true
-    }
-  );
-}
-function getNodeOptionsEnvArgv() {
-  const errors = [];
-  const envArgv = ParseNodeOptionsEnvVar(process.env.NODE_OPTIONS || "", errors);
-  if (errors.length !== 0) ;
-  return envArgv;
-}
-function ParseNodeOptionsEnvVar(node_options, errors) {
-  const env_argv = [];
-  let is_in_string = false;
-  let will_start_new_arg = true;
-  for (let index = 0; index < node_options.length; ++index) {
-    let c = node_options[index];
-    if (c === "\\" && is_in_string) {
-      if (index + 1 === node_options.length) {
-        errors.push("invalid value for NODE_OPTIONS (invalid escape)\n");
-        return env_argv;
-      } else {
-        c = node_options[++index];
-      }
-    } else if (c === " " && !is_in_string) {
-      will_start_new_arg = true;
-      continue;
-    } else if (c === '"') {
-      is_in_string = !is_in_string;
-      continue;
-    }
-    if (will_start_new_arg) {
-      env_argv.push(c);
-      will_start_new_arg = false;
-    } else {
-      env_argv[env_argv.length - 1] += c;
-    }
-  }
-  if (is_in_string) {
-    errors.push("invalid value for NODE_OPTIONS (unterminated string)\n");
-  }
-  return env_argv;
 }
 
 function makeApi(runtimeState, opts) {
@@ -17726,12 +17569,8 @@ function makeApi(runtimeState, opts) {
         return true;
     return false;
   }
-  const defaultExportsConditions = /* @__PURE__ */ new Set([
-    `node`,
-    `require`,
-    ...getOptionValue(`--conditions`)
-  ]);
-  function applyNodeExportsResolution(unqualifiedPath, conditions = defaultExportsConditions, issuer) {
+  const defaultExportsConditions = /* @__PURE__ */ new Set([`default`, `node`, `require`]);
+  function applyNodeExportsResolution(unqualifiedPath, conditions = defaultExportsConditions) {
     const locator = findPackageLocator(ppath.join(unqualifiedPath, `internal.js`), {
       resolveIgnored: true,
       includeDiscardFromLookup: true
@@ -17747,8 +17586,6 @@ function makeApi(runtimeState, opts) {
     if (!opts.fakeFs.existsSync(manifestPath))
       return null;
     const pkgJson = JSON.parse(opts.fakeFs.readFileSync(manifestPath, `utf8`));
-    if (pkgJson.exports == null)
-      return null;
     let subpath = ppath.contains(packageLocation, unqualifiedPath);
     if (subpath === null) {
       throw makeError(
@@ -17756,25 +17593,25 @@ function makeApi(runtimeState, opts) {
         `unqualifiedPath doesn't contain the packageLocation (this is probably an internal error)`
       );
     }
-    if (subpath !== `.` && !isRelativeRegexp.test(subpath))
+    if (!isRelativeRegexp.test(subpath))
       subpath = `./${subpath}`;
+    let resolvedExport;
     try {
-      const resolvedExport = packageExportsResolve({
-        packageJSONUrl: url.pathToFileURL(npath.fromPortablePath(manifestPath)),
-        packageSubpath: subpath,
-        exports: pkgJson.exports,
-        base: issuer ? url.pathToFileURL(npath.fromPortablePath(issuer)) : null,
-        conditions
+      resolvedExport = resolve(pkgJson, ppath.normalize(subpath), {
+        conditions,
+        unsafe: true
       });
-      return npath.toPortablePath(url.fileURLToPath(resolvedExport));
     } catch (error) {
       throw makeError(
         ErrorCode.EXPORTS_RESOLUTION_FAILED,
         error.message,
         { unqualifiedPath: getPathForDisplay(unqualifiedPath), locator, pkgJson, subpath: getPathForDisplay(subpath), conditions },
-        error.code
+        `ERR_PACKAGE_PATH_NOT_EXPORTED`
       );
     }
+    if (typeof resolvedExport === `string`)
+      return ppath.join(packageLocation, resolvedExport);
+    return null;
   }
   function applyNodeExtensionResolution(unqualifiedPath, candidates, { extensions }) {
     let stat;
@@ -18151,10 +17988,10 @@ Required by: ${issuerLocator.name}@${issuerLocator.reference} (via ${issuerForDi
     }
     return ppath.normalize(unqualifiedPath);
   }
-  function resolveUnqualifiedExport(request, unqualifiedPath, conditions = defaultExportsConditions, issuer) {
+  function resolveUnqualifiedExport(request, unqualifiedPath, conditions = defaultExportsConditions) {
     if (isStrictRegExp.test(request))
       return unqualifiedPath;
-    const unqualifiedExportPath = applyNodeExportsResolution(unqualifiedPath, conditions, issuer);
+    const unqualifiedExportPath = applyNodeExportsResolution(unqualifiedPath, conditions);
     if (unqualifiedExportPath) {
       return ppath.normalize(unqualifiedExportPath);
     } else {
@@ -18168,7 +18005,6 @@ Required by: ${issuerLocator.name}@${issuerLocator.reference} (via ${issuerForDi
     if (qualifiedPath) {
       return ppath.normalize(qualifiedPath);
     } else {
-      reportRequiredFilesToWatchMode(candidates.map((candidate) => npath.fromPortablePath(candidate)));
       const unqualifiedPathForDisplay = getPathForDisplay(unqualifiedPath);
       const containingPackage = findPackageLocator(unqualifiedPath);
       if (containingPackage) {
@@ -18222,7 +18058,7 @@ ${candidates.map((candidate) => `Not found: ${getPathForDisplay(candidate)}
       conditions: (_a = opts2.conditions) != null ? _a : defaultExportsConditions,
       readFileSyncFn: tryReadFile
     });
-    if (resolved instanceof url.URL) {
+    if (resolved instanceof URL) {
       return resolveUnqualified(npath.toPortablePath(url.fileURLToPath(resolved)), { extensions: opts2.extensions });
     } else {
       if (resolved.startsWith(`#`))
@@ -18241,7 +18077,7 @@ ${candidates.map((candidate) => `Not found: ${getPathForDisplay(candidate)}
       if (unqualifiedPath === null)
         return null;
       const isIssuerIgnored = () => issuer !== null ? isPathIgnored(issuer) : false;
-      const remappedPath = (!considerBuiltins || !isBuiltinModule(request)) && !isIssuerIgnored() ? resolveUnqualifiedExport(request, unqualifiedPath, conditions, issuer) : unqualifiedPath;
+      const remappedPath = (!considerBuiltins || !isBuiltinModule(request)) && !isIssuerIgnored() ? resolveUnqualifiedExport(request, unqualifiedPath, conditions) : unqualifiedPath;
       return resolveUnqualified(remappedPath, { extensions });
     } catch (error) {
       if (Object.prototype.hasOwnProperty.call(error, `pnpCode`))
